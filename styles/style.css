@@ -51,7 +51,7 @@ nav {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
+/* Replace the existing logo styles with: */
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -62,11 +62,17 @@ nav {
     gap: 0.5rem;
 }
 
-.logo::before {
-    content: "🎤";
-    font-size: 2rem;
+.logo-image {
+    height: 40px;
+    width: 40px; /* Fixed width to match height */
+    object-fit: contain;
 }
 
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+}
 .nav-links {
     display: flex;
     list-style: none;
